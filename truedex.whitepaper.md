@@ -47,7 +47,10 @@ The transaction fees will be charged of `0.3%` of each transaction volume from t
 
 ## Trading API support
 
-As `TrueDEX`'s core logic lies within its smart contract, senior-level traders who are familiar with trading APIs offered in 
+Those expert traders who utilize trading robots to trade will need trading APIs to interact with the system for order filling and canceling etc operations.
+As `TrueDEX`'s core logic lies within its smart contract, the trading APIs will be only related to blockchain node `RPC` APIs with `TrueDEX` smart contract `ABI` for interaction.
+
+Furthermore, in order to encourage professional traders to trade on the platform for inexperienced traders, delegated trader feature is supported in `TrueDEX` such that a user can designate other trader's account to trade for the user. The delegated trader permission will be limited to trading (buy & sell) only. It is still up to the user to withdraw or transfer the asset from the DEX contract to user's own account on-chain.  
 ## Cross-chain bridge
 
 It is paramount important to allow crypto assets that originate from other blockchains to be able to cross over to TrueDEX based blockchain and vice versa. [xChain](https://xchain.pro) has thus been adopted for achieving such purpose.
