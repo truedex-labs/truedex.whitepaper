@@ -5,7 +5,10 @@
 
 
 # Motivation
-Most DEXes exist today run on top of EVM type of blockchains and thus require traders to pay gas fees and have to suffer low on-chain and transaction speed. In order to improve the trading experience, automatic market maker (`AMM`) type of DEXes have been thus introduced to achieve a simple trading experience to both traders and market makers. However they still suffer from the aforementioned issues. In addition, traders are deprived of their rights in choosing the side and price of their orders due to lack of order-book feature support.
+
+Nowadays almost `90%` of crypto trading volume happen within centralized exchanges (CEXes) and we all know all kinds of issues are associated with CEXes including lack of transparency, wash trading by the platform owners against their users and even worth embezzlement or theft of users' assets in their centralized custody.
+
+As alternative solutions to CEXes, many DEXes like UniSwap/PancakeSwap and their clones have been created to provide decentralized trading experience for crypto traders. However, most DEXes exist today run on top of EVM type of blockchains and thus require traders to pay gas fees and have to suffer low on-chain and transaction speed. In order to improve the trading experience, automatic market maker (`AMM`) type of DEXes have been thus introduced to achieve a simple trading experience to both traders and market makers. However they still suffer from the aforementioned issues. In addition, traders are deprived of their rights in choosing the side and price of their orders due to lack of order-book feature support.
 
 There are some other DEXes that offer an order-book feature to mimic the traditional centralized exchange. However due to their underlying networks are still mostly clones of Ethereum and adoption of EVM smart contract technology, their on-chain processing speed is still very much limited. In order to circumvent the technology limitations imposed by the underlying layer-1 network, these DEXes switch to either central limit order book (CLOB) or so-called layer-2 network which is also very much centralized.
 
