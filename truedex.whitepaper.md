@@ -39,12 +39,15 @@ There can be more to be added and it will be open to the community to decided wh
 The transaction fees will be charged of `0.3%` of each transaction volume from the taker only and the fees will be further splitted/shared with the following parties:
 
 - `40%` goes to the counter-party order makers (maker will be rewarded instead of charged of the fees);
-- `10%` goes to the account referrer or creator;
+- `10%` goes to the account referrer or creator (newly updated fees must be claimed within two weeks otherwise forfeited);
 - `50%` goes to the team for system operation support and continuous development of the technology stack;
 ## Underlying blockchains
 
 [Armonia blockchain](https://amax.network) will be first adopted for its native support of WASM smart contract technology. In future, other WASM chains like EOS, WAX etc will be also considered for deployment to embrace their corresponding communities.
 
+## Trading API support
+
+As `TrueDEX`'s core logic lies within its smart contract, senior-level traders who are familiar with trading APIs offered in 
 ## Cross-chain bridge
 
 It is paramount important to allow crypto assets that originate from other blockchains to be able to cross over to TrueDEX based blockchain and vice versa. [xChain](https://xchain.pro) has thus been adopted for achieving such purpose.
