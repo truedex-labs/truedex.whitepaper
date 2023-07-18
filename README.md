@@ -1,2 +1,4 @@
 # truedex.whitepaper
-# Contact: Telegram: https://t.me/truedexofficial
+# Resources
+* Website: https://truedex.io
+* Telegram: https://t.me/truedexofficial
