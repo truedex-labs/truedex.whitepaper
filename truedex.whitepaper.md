@@ -45,7 +45,7 @@ The transaction fees will be charged of `0.3%` of each transaction volume from t
 
 [Armonia blockchain](https://amax.network) will be first adopted for its native support of WASM smart contract technology. In future, other WASM chains like EOS, WAX etc will be also considered for deployment to embrace their corresponding communities.
 
-## Trading API support
+## Trading API & Delegated Trader Support
 
 Those expert traders who utilize trading robots to trade will need trading APIs to interact with the system for order filling and canceling etc operations.
 As `TrueDEX`'s core logic lies within its smart contract, the trading APIs will be only related to blockchain node `RPC` APIs with `TrueDEX` smart contract `ABI` for interaction.
