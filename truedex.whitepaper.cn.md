@@ -1,50 +1,48 @@
-`TrueDEX White Paper`
+`TrueDEX白皮书`
 
 # True DEX
-**an order-book based pure decentralized exchange**
+**一个支持订单簿的纯去中心化高性能交易所**
 
 
-# Motivation
+# 建设动机
 
-Nowadays almost `90%` of crypto trading volume happens within centralized exchanges (CEXes) and we all know all kinds of issues are associated with CEXes including lack of transparency, wash trading by the platform owners against their users and even worth embezzlement or theft of users' assets in their centralized custody.
+当今行业里面几乎`90%`的加密资产交易量发生在中心化交易所(CEX)里面，而我们也知道中心化交易所存在各种问题，其中包括缺乏透明度容易发生暗箱操作，包括交易所刷量或者对用户的交易进行量化套利行为，另外更为恶劣的有擅自挪用用户资产或者直接偷取用户资产等非法行为。
 
-As alternative solutions to CEXes, many DEXes like UniSwap/PancakeSwap and their clones have been created to provide decentralized trading experience for crypto traders. However, most DEXes exist today run on top of EVM type of blockchains and thus require traders to pay gas fees and have to suffer low on-chain and transaction speed. In order to improve the trading experience, automatic market maker (`AMM`) type of DEXes have been thus introduced to achieve a simple trading experience to both traders and market makers. However they still suffer from the aforementioned issues. In addition, traders are deprived of their rights in choosing the side and price of their orders due to lack of order-book feature support.
+作为中心化交易所的一种替代技术称为去中心化交易所(DEX)，例如：UniSwap和PancakeSwap或者是它们的仿制品。目的是为了提供一种去中心化的交易体验给到去中心的加密资产交易用户。 然而，大部分的DEXe都是运行在EVM虚拟机的公链之上，因此需要支付大量gas费，而且需低性能处理能力。为了改善体验和简化操作流程，很多DEXes采取了所谓自动做实商(AMM)的模式，但是导致了价格滑点问题。而且之前的那些问题还是继续存在。此外，由于缺乏订单簿交易用户被剥夺了可以决定方向和交易价格这些订单级别的定制能力，完全无法满足大量传统和硬核交易员的需求。
 
-There are some other DEXes that offer an order-book feature to mimic the traditional centralized exchange. However due to their underlying networks are still mostly clones of Ethereum and adoption of EVM smart contract technology, their on-chain processing speed is still very much limited. In order to circumvent the technology limitations imposed by the underlying layer-1 network, these DEXes switch to either central limit order book (CLOB) or so-called layer-2 network which is also very much centralized.
+另外还有其它一些DEXes也能提供订单簿的交易体验，但是由于它们大多选用了以太坊或者其克隆的公链技术，他们它们的链上处理性能满足高频需求。为了避开这个问题，这些DEXes采用链中心化存放订单簿和中心化完成撮合的过程，最后把结算的交易批量打包上链。这种采用了中心化的后台或者有些采用了中心化技术为本质的二层网络技术，它们都离不开中心化的技术弊端。
 
-`TrueDEX` aims to address the issues being faced with the contemporary CEXes and DEXes through a holistic technology approach that takes into the underlying network as well as smart contract into consideration in order to fulfill traders' dreams.
+`TrueDEX` 因此而生，为了解决上面无论是现有CEXes还是DEXes所提到的问题。通过采用了从公链底层到链上部署的智能合约和周边配套基础设施，在每一个核心环节都力求做到极大的去中心化，来满足用户的需求。
 
-# TrueDEX Technical Goals
-Therefore, it has been much needed for the general crypto community for a truly decentralized technology stack that can meet the following technical traits:
+# TrueDEX技术目标
+`TrueDEX`坚信去中心化的加密资产必须通过去中心化的技术来实现公平、透明、安全和高效的交易。只有满足以下特性，一个真正的去中心化交易所才能服务好广大的加密资产社区：
 
-- `decentralization`: order booking, canceling, matching and settlement fully on-chain
-- `high performance`: can support matching of up to 1000 orders in one second in a single shard; The more shards, the higher the matching speed;
-- `gas free`: front-running cannot be tolerated hence no gas fees for each order transaction submission
-- `order book`: to provide a true trading experience, traders can place or cancel orders and the rest will be all handled by `TrueDEX` smart contract logic for you automatically  
-## Supported Trading Pairs
+- `去中心化`: 订单交易、交易取消、交易撮合、和交易结算全部链上完成
+- `高性能`: 单市场分片每秒撮合速度至少1000笔
+- `零gas费`: 无需支付gas上链，因此无抢先交易可能
+- `订单簿模式`: 用户可以提交订单上链，其余部分全部链上智能合约逻辑完成  
+## 交易对支持
 
-For a start, following trading pairs will be first supported:
+以下交易对为在上线时候首先考虑支持：
 
-- BTC/USDT
-- ETH/USDT
-- BNB/USDT
-- TRX/USDT
+- `BTC/USDT`
+- `ETH/USDT`
+- `BNB/USDT`
+- `TRX/USDT`
 
-There can be more to be added and it will be open to the community to decided which trading pairs to be supported in future.
+未来可以添加更多交易对，社区成员也可以通过一起来投票决策交易对的架。
+## 交易手续费
 
-## Transaction Fees
+`TrueDEX` 的创世团队决定不学习大部分的`DeFi`项目方发行任何代币，过早消耗未来的潜力。而是通过不断建设交易市场，做大交易量来赚取相应的交易手续费。只有在较远的未来并且由社区支持才有可能发行类似`UNI`/`BNB`/`OKB`这些平台代币的通证，用来转化吸收交易手续费带来的价值和投资者的投入价值。
 
-`TrueDEX` founding team decides not to issue a new token as most `DeFi` platforms would do. Instead, `TrueDEX` will solely rely on transaction fees as the sole source of revenue. Only in a very late stage as requested and approved by the community will a new token to be issued to convert the value of transaction fees into the new token.
+交易手续费的费率定位：`0.3%` 并且只是由交易的吃单一方承担。收取的交易手续费会实时按以下比例分配到三方：
+- `40%` 分配给交易的对手盘挂单者
+- `10%` 分配给账户的推荐人（即链上账户创建人`creator`）
+- `50%` 分配给团队用于持续技术研发和系统支持；
+## 区块链网络支持
 
-The transaction fees will be charged of `0.3%` of each transaction volume from the taker only and the fees will be further splitted/shared with the following parties:
+[Armonia公链](https://amax.network) 因为支持了高性能的WASM虚拟机，并且具有全方面综合的优秀技术特性而会被首先选用。未来根据社区反馈，会逐渐增加其它同类公链的支持。
 
-- `40%` goes to the counter-party order makers (maker will be rewarded instead of charged of the fees);
-- `10%` goes to the account referrer or creator;
-- `50%` goes to the team for system operation support and continuous development of the technology stack;
-## Underlying blockchains
+## 跨链桥
 
-[Armonia blockchain](https://amax.network) will be first adopted for its native support of WASM smart contract technology. In future, other WASM chains like EOS, WAX etc will be also considered for deployment to embrace their corresponding communities.
-
-## Cross-chain bridge
-
-It is paramount important to allow crypto assets that originate from other blockchains to be able to cross over to TrueDEX based blockchain and vice versa. [xChain](https://xchain.pro) has thus been adopted for achieving such purpose.
+至关重要的一个基础设施是跨链桥，可以帮助把加密资产从其它公链跨链过来或者完成交易后跨出回到其它公链。根据社区一致好评， [xChain](https://xchain.pro) 被推荐作为首选的跨链的工具。
