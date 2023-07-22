@@ -37,7 +37,7 @@ There can be more to be added and it will be open to the community to decided wh
 
 `TrueDEX` founding team decides not to issue a new token as most `DeFi` platforms would do. Instead, `TrueDEX` will solely rely on transaction fees as the sole source of revenue. Only in a very late stage as requested and approved by the community will a new token to be issued to convert the value of transaction fees into the new token.
 
-The transaction fees will be charged of `0.3%` of each transaction volume from the taker only and the fees will be further splitted/shared with the following parties:
+The transaction fees will be charged of `0.3%` of each transaction volume from the taker only and the fees will be further split/shared with the following parties:
 
 - `40%` goes to the counter-party order makers (maker will be rewarded instead of charged of the fees);
 - `10%` goes to the account referrer or creator (newly updated fees must be claimed within two weeks otherwise forfeited);
