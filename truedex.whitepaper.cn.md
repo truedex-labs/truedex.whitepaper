@@ -26,6 +26,7 @@
 以下交易对为在上线时候首先考虑支持：
 
 - `BTC/USDT`
+- `DOGE/USDT`
 - `ETH/USDT`
 - `BNB/USDT`
 - `TRX/USDT`

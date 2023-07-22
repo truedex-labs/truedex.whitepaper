@@ -25,10 +25,11 @@ Therefore, it has been much needed for the general crypto community for a truly 
 
 For a start, following trading pairs will be first supported:
 
-- BTC/USDT
-- ETH/USDT
-- BNB/USDT
-- TRX/USDT
+- `BTC/USDT`
+- `DOGE/USDT`
+- `ETH/USDT`
+- `BNB/USDT`
+- `TRX/USDT`
 
 There can be more to be added and it will be open to the community to decided which trading pairs to be supported in future.
 
