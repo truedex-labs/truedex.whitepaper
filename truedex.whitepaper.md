@@ -39,9 +39,13 @@ There can be more to be added and it will be open to the community to decided wh
 
 The transaction fees will be charged of `0.3%` of each transaction volume from the taker only and the fees will be further split/shared with the following parties:
 
-- `40%` goes to the counter-party order makers (maker will be rewarded instead of charged of the fees);
-- `10%` goes to the account referrer or creator (newly updated fees must be claimed within two weeks otherwise forfeited);
-- `50%` goes to the team for system operation support and continuous development of the technology stack;
+- `25%` goes to `$TYCHE` burn pool
+- `10%` goes to the order taker (must configure `inviter`, applicable for the first monthly only);
+- `30%` goes to the counter-party order makers (maker will be rewarded instead of charged of the fees);
+- `23%` goes to the taker's inviter for the first months and `33%` for the subsequent months (if not set all go to `$TYCHE` burn pool);
+- `10%` goes to the community or project leader who gathers the `inviters` and onboard the token project onto `TrueDEX`;
+- `2%` goes to the account referrer or creator (newly updated fees must be claimed within two weeks otherwise forfeited);
+
 ## Underlying blockchains
 
 [Armonia blockchain](https://amax.network) will be first adopted for its native support of WASM smart contract technology. In future, other WASM chains like EOS, WAX etc will be also considered for deployment to embrace their corresponding communities.
